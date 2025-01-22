@@ -1,17 +1,41 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Programming for Kids</title>
+	<title>ロボ団大森校テキスト</title>
 	<style>
 		body {
-			font-family: Arial, sans-serif;
+			font-family: 'Hiragino Kaku Gothic Pro', 'Meiryo', sans-serif;
 			text-align: center;
 			margin: 20px;
 		}
 
+		.section {
+			border: 2px solid #b0ff60;
+			/* 黄緑のライン */
+			padding: 0px 100px 20px;
+			/* 枠線内の余白 */
+			margin: 20px 0;
+			/* 他の要素との間隔 */
+			display: inline-block;
+			/* テキストサイズにピッタリの枠を作る */
+			border-radius: 5px;
+			/* 角を丸くする */
+			text-align: center;
+			/* コンテンツを中央揃え */
+		}
+
 		h1 {
+			color: white;
+			/* テキストを白色に変更 */
+			background-color: #000080;
+			/* 紺色の帯 */
+			margin-top: 50px;
+			/* 上の余白を50pxに設定 */
+		}
+
+		h2 {
 			color: #2c3e50;
 		}
 
@@ -29,12 +53,14 @@
 	</style>
 </head>
 <body>
-	<h1>Welcome to Programming for Kids</h1>
-	<p>Click on a lesson below to start learning!</p>
-
-	<!-- レッスンへのリンク -->
-	<a href="lesson1.html">Lesson 1: Drawing Shapes with Turtle</a>
-	<a href="lesson2.html">Lesson 2: Interactive Turtle Movements</a>
-	<a href="lesson3.html">Lesson 3: Making a Simple Game</a>
+	<h1>Innovater＋</h1>
+	<p>下のレッスンをクリックして、プログラミングを始めよう！</p>
+	<div class="section">
+		<h2>1.turtleを学ぼう！</h2>
+		<!-- レッスンへのリンク -->
+		<a href="lesson1.html">Lesson1: タートルを動かそう</a>
+		<a href="lesson2.html">Lesson2: ミニゲームを作ろう(1)</a>
+		<a href="lesson3.html">Lesson3: ミニゲームを作ろう(2)</a>
+	</div>　
 </body>
 </html>
