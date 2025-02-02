@@ -4,8 +4,9 @@ document.addEventListener("DOMContentLoaded", function () {
 		const iframe = container.querySelector(".trinket iframe");
 
 		if (description && iframe) {
-			const height = description.offsetHeight; // description の高さを取得
-			iframe.style.height = `${height}px`; // trinket iframe の高さを合わせる
+			const minHeight = 300; // 最低限確保したい高さ（px）
+			const height = Math.max(description.offsetHeight, minHeight);
+			iframe.style.height = `${height}px`; // trinket iframe の高さを適用
 		}
 	});
 });
