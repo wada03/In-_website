@@ -1,8 +1,11 @@
-
 document.addEventListener("DOMContentLoaded", function () {
-	const description = document.querySelector(".description");
-	const iframe = document.querySelector(".trinket iframe");
-	if (description && iframe) {
-		iframe.style.height = `${description.offsetHeight}px`;
-	}
+	document.querySelectorAll(".container").forEach(container => {
+		const description = container.querySelector(".description");
+		const iframe = container.querySelector(".trinket iframe");
+
+		if (description && iframe) {
+			const height = description.offsetHeight; // description の高さを取得
+			iframe.style.height = `${height}px`; // trinket iframe の高さを合わせる
+		}
+	});
 });

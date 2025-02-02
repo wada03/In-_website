@@ -4,46 +4,98 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>レッスン3: 関数を学ぼう！</title>
-    <script src="script.js"></script>
     <link rel="stylesheet" href="style.css">
 
 </head>
 <body>
-    <h1>レッスン3: 関数を学ぼう！</h1>
-    <h2>(1)関数を動かしてみよう</h2>
+    <h1>レッスン３: 関数を学ぼう！</h1>
+    <h2>１．関数を動かしてみよう</h2>
     <div class="container">
-        <!-- 左側の説明 -->
+        <!--左側の説明-->
         <div class="description">
-            <p>関数とはSPIKEのマイブロックと同じで、すでに書いたコードをプログラムに記憶させ、いつでも実行できるようにするものです。</p>
+            <p>関数とはSPIKEのマイブロックと似ています。</p>
+            <p>すでに書いたコードをプログラムに記憶させ、いつでも実行できるようにするものです。</p>
             <p>関数を作るには、<code>def</code>、関数名、括弧（<code>()</code>）、コロン（<code>:</code>）の順に入力します。</p>
             <p>以下は、<code>first_function</code>という名前の関数の宣言です。</p>
             <pre>
 def first_function():</pre>
-            <p>宣言したら、インデントしてその中にコードを入れることができる。</p>
-            <p>インデントとは4つの空白を入れることで、TABキーを押すとできます。</p>
+            <p>宣言したら、インデントしてその中にコードを入れることができます。</p>
+            <p>インデントとは４つの空白のことで、TABキーを押すとできます。</p>
             <pre>
 def first_function():
-    print("この行はスペース4つ分インデントされています！")</pre>
+    print("この行はスペース４つ分インデントされています！")</pre>
             <p>関数を定義したら、その名前と括弧を入力することで以下のように呼び出すことができます。</p>
             <pre>
 first_function()</pre>
             <p>これを実行すると、関数の中にあるすべてのコードが実行されます。</p>
         </div>
 
-        <!-- 右側にTrinketを埋め込む -->
+        <!--右側にTrinketを埋め込む-->
         <div class="trinket">
             <iframe src="https://trinket.io/embed/python/7f12de07a371?toggleCode=true" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
         </div>
-
-        <div class="exercise">
-            <div class="exercise-header">
-                <div class="icon">練習</div>
-                <p>以下の例ではすでに関数が定義されていて、それが1回呼び出されている。これを1回以上呼び出して、何が起こるか見てみよう！</p>
-            </div>
-            <iframe src="https://trinket.io/embed/python/de57059d1932" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
-        </div>
-        <!-- ホームページに戻るリンク -->
-        <p><a href="index.html">Back to Home</a></p>
     </div>
+
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="icon">練習</div>
+            <p>下の例ではすでに関数が定義されています。これを１回以上呼び出して、何が起こるか見てみましょう！</p>
+        </div>
+        <iframe src="https://trinket.io/embed/python/de57059d1932" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+
+
+    <!--チャプター(2)-->
+    <h2>２．引数をつかって関数に違う動きをさせよう</h2>
+    <div class="container">
+        <!--左側の説明 -->
+        <div class="description">
+            <p>(１)関数の嬉しい点は、複雑な命令を繰り返し実行できることです。</p>
+            <p>料理のレシピのように同じものをいくつも作れます。</p>
+            <p>右の例では、ティナにケーキのレシピを教えて２つ作りました。</p>
+            <p>関数をもう一回呼び出して、ケーキを３つ作ってみましょう。</p>
+            <p>それが出来たら、ケーキを縦に並べる方法を考えてみましょう。</p>
+        </div>
+
+        <!--右側のTrinket-->
+        <div class="trinket">
+            <iframe src="https://trinket.io/embed/python/3ec9cfb3dbb5" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <div class="container">
+        <!--左側の説明 -->
+        <div class="description">
+            <p>(２)関数は引数と呼ばれる特別な入力を与えることで、毎回違う動きにすることもできます。</p>
+            <p>これはティナがケーキを作る例題①で使いました。その際、</p>
+            <p>関数を定義した時に、入力した<code>x,y</code>は"仮"引数（parameter）。</p>
+            <p>関数を呼び出す時に、入力した<code>x,y</code>は"実"引数（argument）。</p>
+            <p>右の例では、<code>my_function</code>を２回呼び出しています。</p>
+            <p><code>my_function</code>では<code>print(parameter)</code>と定義されていますが、</p>
+            <p>１回目は 「Hello,ロボにゃん」、２回目は 「Hello,ねずボット」と出力されました。</p>
+            <p>つまりこの関数は仮引数ではなく、入力された実引数を表示します。</p>
+            <p>そのため、表示する文字を関数を呼び出す際に決めることができます。</p>
+        </div>
+
+        <!--右側のTrinket-->
+        <div class="trinket">
+            <iframe src="https://trinket.io/embed/python/55e6e2f247d5" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+        </div>
+    </div>
+
+    <!--練習問題-->
+    <div class="exercise">
+        <div class="exercise-header">
+            <div class="icon">練習</div>
+            <p>関数<code>say()</code>が異なる引数で呼び出せるように修正しましょう！</p>
+        </div>
+        <iframe src="https://trinket.io/embed/python/4e61135820a2" width="100%" height="600" frameborder="0" marginwidth="0" marginheight="0" allowfullscreen></iframe>
+    </div>
+
+    <!--ホームページに戻るリンク-->
+    <p><a href="index.html">Back to Home</a></p>
+
+    <!--javascriptリンク-->
+    <script src="script.js"></script>
 </body>
 </html>

@@ -9,21 +9,28 @@ body {
 	flex-wrap: wrap;
 	justify-content: space-between;
 	align-items: flex-start;
+	background-color: #efffef;
+	border: 2px solid #b0ff60;
+
+	border-radius: 5px;
+	padding: 0px;
+	margin-bottom: 20px;
 }
 
 .description {
 	flex: 1 1 45%;
-	border: 2px solid #a1a1a1;
-	border-radius: 5px;
-	padding: 10px 20px 10px;
-	margin-right: 20px;
+	padding: 10px 20px 0px;
+	margin-right: 10px;
+	text-indent: 5px;
 }
 
 .trinket {
 	flex: 1 1 45%;
+	padding: 15px 10px 0px;
 }
 
 .exercise {
+	background-color: #effeff;
 	border: 2px solid #3498db;
 	border-radius: 5px;
 	padding: 10px 20px 10px;
@@ -51,26 +58,37 @@ body {
 	margin-right: 10px;
 }
 
+.exercise.red {
+	background-color: #fff1e1;
+}
+
+.icon.red {
+	background-color: #ff8800;
+}
+
+
 h1 {
-	color: #2c3e50;
-	text-align: center;
+	color: white;
+	background-color: #000080;
+	text-align: left;
+	padding-left: 20px;
 }
 
 h2 {
-	color: #2c3e50;
-	background-color: #b0ff60;
+	border-bottom: 4px solid #a1a1a1;
+	display: inline-block;
 	text-align: left;
 	margin-top: 20px;
 }
 
 code {
-	background-color: #f9f9f9;
+	background-color: white;
 	padding: 2px 4px;
 	border-radius: 4px;
 }
 
 pre {
-	background-color: #f9f9f9;
+	background-color: white;
 	padding: 10px;
 	border-radius: 4px;
 	overflow-x: auto;
